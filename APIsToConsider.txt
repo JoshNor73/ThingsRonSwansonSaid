@@ -1,0 +1,6 @@
+Ron Swanson Quotes API:
+https://github.com/jamesseanwright/ron-swanson-quotes#ron-swanson-quotes-api
+
+Shibe API:
+https://shibe.online/
+

@@ -1,0 +1,29 @@
+<%- include("partials/header.ejs") %>
+
+    <div id="main">
+        <% if(locals.quote) {%>
+            <%# console.log("-----ejs side-----") %>
+            <%# console.log("image: " + image + "\nquote: " + quote) %>
+            <% if(quote.length > 0) {%>
+                <%# console.log("Length: " + quote.length) %>
+                <div class="bubble">
+                    <% const val = Math.floor(Math.random() * quote.length); %>
+                    <%# console.log("Val: " + val) %>
+                    <h2> <%= quote[val] %> </h2>
+                </div>
+            <% } else { %>
+                <div class="bubble">
+                    
+                </div>
+            <% } %>
+            
+        <% } else { %>
+            <div class="bubble">
+                <h2> Normally, if given the choice between doing something and nothing, I’d choose to do nothing. But I will do something if it helps someone else do nothing. I’d work all night, if it meant nothing got done. </h2>
+                <h6> (API not reachable!) </h6>
+            </div>
+        <% } %>
+        <img src="/images/RonSwanson2.jpg">
+    </div>
+    </body>
+</html>
